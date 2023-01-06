@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Rubik:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Passions+Conflict&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Часы, Секундомер, Таймер</title>
+</head>
+<body>
+    <div class="container">
+        <ul class="tabs d-flex justify-content-between tabs__caption">
+            <li class="tabs__item">
+                <a href="index.html">Watch</a>
+            </li>
+            <li class="tabs__item">
+                <a href="stopwatch.html">Stopwatch</a>
+            </li>
+            <li class="tabs__item">
+                <a href="timer.html">Timer</a>
+            </li>
+        </ul>
+        
+        <div class="stopwatch">
+            <div class="stopwatch__item">
+                <div class="hour-item">00</div>
+                <div class="hour-title">Hours</div>
+            </div>
+            <div class="stopwatch__item">
+                <div class="minute-item">00</div>
+                <div class="minute-title">Minutes</div>
+            </div>
+            <div class="stopwatch__item">
+                <div class="second-item">00</div>
+                <div class="second-title">Seconds</div>
+            </div>
+            <div class="stopwatch__item">
+                <div class="millisecond-item">00</div>
+                <div class="millisecond-title">Milliseconds</div>
+            </div>
+        </div>
+        <div class="stopwatch__button">
+            <button class="button-start">Start</button>
+            <button class="button-pause">Pause</button>
+            <button class="button-stop">Stop</button>
+            <button class="button-new">Now</button>
+        </div>
+        <div class="result-block">
+            <div class="result-title">Results:</div>
+            <div class="result"></div>
+            <div class="results-watch">
+                <div class="results-hour"></div>
+                <div class="results-minute"></div>
+                <div class="results-second"></div>
+                <div class="results-millisecond"></div>
+            </div>
+            <button class="results-button">Clear result</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
